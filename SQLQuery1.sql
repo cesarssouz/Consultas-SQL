@@ -1,0 +1,13 @@
+-- CASE = Caso
+-- WHEN = Quando
+-- THEN = Atribua
+-- ELSE = Senão
+
+select 
+EnglishProductSubcategoryName,
+CASE 
+When EnglishProductSubcategoryName in ('Mountain Bikes','Road Bikes','Touring Bikes','Handlebars','Bottom Brackets','Brakes') then 'sport'
+else 'Sem categoria'
+end
+
+from AdventureWorksDW2019.dbo.DimProductSubCategory
